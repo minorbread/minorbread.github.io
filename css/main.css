@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9e904e;
+  background: #ff4aa3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2970,7 +2970,7 @@ body {
 }
 .header {
   background: rgba(108,150,225,0.8);
-  background: url("../../images/header.png");
+  background: url("../../images/header2.png");
 }
 .menu .menu-item a {
   font-size: 14px;

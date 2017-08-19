@@ -108,6 +108,16 @@
 <meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="keep clam, stay stupid">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -933,5 +943,7 @@
 
   
 
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>
