@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bba1b3;
+  background: #9e904e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2948,7 +2948,7 @@ hr {
 .site-meta .site-title {
   font-size: 28px;
   font-family: 'Comic Sans MS', sans-serif;
-  color: #f5f7fa;
+  color: #6c96e1;
 }
 .sidebar {
   background: #fafafa;
@@ -2970,11 +2970,11 @@ body {
 }
 .header {
   background: rgba(108,150,225,0.8);
-  background: url("../../images/header.jpg");
+  background: url("../../images/header.png");
 }
 .menu .menu-item a {
   font-size: 14px;
-  color: #52686a;
+  color: #85c8dd;
   border-radius: 4px;
 }
 .menu .menu-item a:hover {
