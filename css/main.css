@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff4aa3;
+  background: #c437ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3003,4 +3003,7 @@ body {
 }
 .post-button a:hover {
   color: #7784ba;
+}
+.site-author-name {
+  color: #000;
 }
