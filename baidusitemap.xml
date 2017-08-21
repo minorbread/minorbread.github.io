@@ -3,42 +3,27 @@
 
 
     
-    
-    
-    
-    
   <url>
-    <loc>http://yoursite.com/2017/08/20/HelloWorld/</loc>
-    <lastmod>2017-08-20T13:08:03.480Z</lastmod>
+    <loc>http://yoursite.com/2017/08/21/1/</loc>
+    <lastmod>2017-08-21T06:18:16.113Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2017-08-20T13:08:03.480Z</pubTime>
+        <title>hexo博客搭建基础教程</title>
+        <pubTime>2017-08-21T06:17:19.000Z</pubTime>
         
-        <tag>first</tag>
+        <tag>hexo</tag>
          
          
            
              
-              <breadCrumb title="hi" url="http://yoursite.com/categories/hi/"/>
+              <breadCrumb title="hexo基础" url="http://yoursite.com/categories/hexo%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
     </url>
 
     
-  <url>
-    <loc>http://yoursite.com/2017/08/19/hello-world/</loc>
-    <lastmod>2017-08-19T14:08:03.575Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-08-19T14:08:03.575Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
+    
+    
+    
 </urlset>
