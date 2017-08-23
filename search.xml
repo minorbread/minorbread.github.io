@@ -3,13 +3,39 @@
   
     
     <entry>
-      <title><![CDATA[hexo博客搭建基础教程]]></title>
+      <title><![CDATA[hexo+next博客搭建教程]]></title>
       <url>/2017/08/21/1/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。简易教程</p>
+<h1 id="搭建环境配置"><a href="#搭建环境配置" class="headerlink" title="搭建环境配置"></a>搭建环境配置</h1><ul>
+<li>下载安装<a href="http://nodejs.cn/download/" target="_blank" rel="external">nodejs</a></li>
+<li>下载安装<a href="https://git-scm.com/downloads" target="_blank" rel="external">git</a></li>
+<li>注册<a href="https://github.com/join?source=header-home" target="_blank" rel="external">github</a>账号</li>
+<li>下载安装hexo: 打开命令行输入:</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli</div></pre></td></tr></table></figure>
+<p>至此hexo的搭建环境基本配好，可以开始搭建本地博客了</p>
+<h1 id="本地搭建博客"><a href="#本地搭建博客" class="headerlink" title="本地搭建博客"></a>本地搭建博客</h1><p>  初始化博客,命令行输入:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure>
+<p>当命令行出现 <code>Start blogging with Hexo!</code> 说明博客模板已生成成功<br>进入刚才创建的文件夹，运行:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd blog </div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>在浏览器上输入<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>当我们看到浏览器显示<br><img src="http://img1.ph.126.net/XErC8XQyT63mfKfroAL7Kg==/1273955744610619279.png" alt="cmd-markdown-logo"><br>就说明本地博客搭建成功</p>
+<h1 id="博客的基本配置"><a href="#博客的基本配置" class="headerlink" title="博客的基本配置"></a>博客的基本配置</h1><p>初始化本地博客后，我们需要更改配置文件，配置文件从博客文件夹中打开，其命名为<code>_config.yml</code>,我们把它称为<code>站点配置文件</code>,而在博客中的theme文件夹也有一个<code>_config.yml</code>，它被叫做主题配置文件。<br>而配置文件可能因版本的差异而不同，在此报下我使用的hexo版本:<code>hexo: 3.3.8</code> 和<code>hexo-cli: 1.0.3</code></p>
+<p>打开<code>_config.yml</code>一眼能看到</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Site</div><div class="line">title: Hexo</div><div class="line">subtitle:</div><div class="line">description:</div><div class="line">author: John Doe</div><div class="line">language:</div><div class="line">timezone:</div><div class="line"><span class="meta">#</span>许多其他的配置信息#</div></pre></td></tr></table></figure>
+<p>我们可以先把<code>title</code>和<code>author</code>改成自己博客名字和作者姓名，接着在<code>language:</code>项添加<code>zh-Hans</code>改成中文显示，切记每一个配置前必须加一个空格，否则将运行不了！<br>这就是站点的基本配置，而其它的配置基本是不用碰的，但如果你想了解其它配置，点击☞ <a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">了解其他配置</a></p>
+<h1 id="将上传博客到GitHub"><a href="#将上传博客到GitHub" class="headerlink" title="将上传博客到GitHub"></a>将上传博客到GitHub</h1><h2 id="本地上传准备"><a href="#本地上传准备" class="headerlink" title="本地上传准备"></a>本地上传准备</h2><p>  在上传博客之前，我们需要在本地做好准备工作，以便后续对接，<br>  在博客文件夹下输入命令来安装hexo关于github模块:<br>  <code>npm install hexo-deployer-git –-save</code></p>
+<p>  接着打开<code>_config.yml</code>，将其拖到最下面，我们可以看到<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Deployment</div><div class="line"><span class="meta">#</span># Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">type:</div></pre></td></tr></table></figure></p>
+<p>  将其改成<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: </div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>  本地上传准备基本完成</p>
+<h2 id="github项目搭建"><a href="#github项目搭建" class="headerlink" title="github项目搭建"></a>github项目搭建</h2><p>  我们已在<code>搭建环境配置章</code>中我们已经注册好了给github账号，先登录github点击主页上的</p>
+<p>  接着点击<br>  输入<code>注册的github名字.github.io</code>再按下<br>  ，博客项目就创建成功了，这时我们点击项目中的链接复制按钮，把它粘贴到 <code>_conifg.yml</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">repository: https://github.com/github账号/github账号.github.io.git</div></pre></td></tr></table></figure>
+<p>命令行再输入<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g #生成静态文件</div><div class="line">hexo d #部署网站</div></pre></td></tr></table></figure></p>
+<p>按提示输入github账号和密码后，看到则上传成功</p>
+]]></content>
       
         <categories>
             
-            <category> hexo基础 </category>
+            <category> hexo教程 </category>
             
         </categories>
         
@@ -17,6 +43,8 @@
         <tags>
             
             <tag> hexo </tag>
+            
+            <tag> next主题 </tag>
             
         </tags>
         
