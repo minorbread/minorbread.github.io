@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[hexo+next博客搭建教程]]></title>
-      <url>/2017/08/21/1/</url>
+      <url>/2017/08/21/hexo+next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<a id="more"></a></p>
 <h1 id="搭建环境配置"><a href="#搭建环境配置" class="headerlink" title="搭建环境配置"></a>搭建环境配置</h1><ul>
 <li>下载安装<a href="http://nodejs.cn/download/" target="_blank" rel="external">nodejs</a></li>
