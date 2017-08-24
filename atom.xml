@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://minorbread.github.io/"/>
   <updated>2017-08-24T04:49:56.287Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://minorbread.github.io/</id>
   
   <author>
     <name>ZGQ</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>hexo+next博客搭建教程</title>
-    <link href="http://yoursite.com/2017/08/21/1/"/>
-    <id>http://yoursite.com/2017/08/21/1/</id>
+    <link href="https://minorbread.github.io/2017/08/21/1/"/>
+    <id>https://minorbread.github.io/2017/08/21/1/</id>
     <published>2017-08-21T06:17:19.000Z</published>
     <updated>2017-08-24T04:49:56.287Z</updated>
     
@@ -28,12 +28,12 @@
     
     </summary>
     
-      <category term="hexo教程" scheme="http://yoursite.com/categories/hexo%E6%95%99%E7%A8%8B/"/>
+      <category term="hexo教程" scheme="https://minorbread.github.io/categories/hexo%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://minorbread.github.io/tags/hexo/"/>
     
-      <category term="NexT主题" scheme="http://yoursite.com/tags/NexT%E4%B8%BB%E9%A2%98/"/>
+      <category term="NexT主题" scheme="https://minorbread.github.io/tags/NexT%E4%B8%BB%E9%A2%98/"/>
     
   </entry>
   
