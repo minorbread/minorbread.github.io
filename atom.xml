@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minorbread.github.io/"/>
-  <updated>2017-08-24T08:03:55.059Z</updated>
+  <updated>2017-09-05T07:46:25.399Z</updated>
   <id>https://minorbread.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublime_text常用插件--web开发</title>
+    <link href="https://minorbread.github.io/2017/08/24/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6-web%E5%BC%80%E5%8F%91/"/>
+    <id>https://minorbread.github.io/2017/08/24/sublime-text常用插件-web开发/</id>
+    <published>2017-08-24T08:56:00.000Z</published>
+    <updated>2017-09-05T07:46:25.399Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。&lt;br&gt;且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之：D&lt;br&gt;
+    
+    </summary>
+    
+      <category term="web开发工具" scheme="https://minorbread.github.io/categories/web%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="sublime_text3插件" scheme="https://minorbread.github.io/tags/sublime-text3%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="web开发" scheme="https://minorbread.github.io/tags/web%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="sublime_text3配置" scheme="https://minorbread.github.io/tags/sublime-text3%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo+next博客搭建教程</title>

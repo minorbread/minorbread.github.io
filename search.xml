@@ -3,6 +3,50 @@
   
     
     <entry>
+      <title><![CDATA[sublime_text常用插件--web开发]]></title>
+      <url>/2017/08/24/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6-web%E5%BC%80%E5%8F%91/</url>
+      <content type="html"><![CDATA[<p>作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。<br>且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之：D<br><a id="more"></a></p>
+<h1 id="sublime-text3插件安装"><a href="#sublime-text3插件安装" class="headerlink" title="sublime_text3插件安装"></a>sublime_text3插件安装</h1><p>  sublime_text3常用插件安装</p>
+<h2 id="package-control安装-sublime-text3版本"><a href="#package-control安装-sublime-text3版本" class="headerlink" title="package control安装(sublime_text3版本)"></a>package control安装(sublime_text3版本)</h2><p>  打开sublime_text按<code>ctrl</code>+<code>`</code>输入<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</div></pre></td></tr></table></figure></p>
+<h2 id="Emmet"><a href="#Emmet" class="headerlink" title="Emmet"></a>Emmet</h2><p>  <code>Emmet</code>插件,是一款提升书写<code>html</code>，<code>css</code>代码的插件，<a href="http://www.w3cplus.com/tools/Emmet-cheat-sheet.html" target="_blank" rel="external">Emmet使用手册</a>。<br>  如何安装: 在安装完<code>package control</code>插件后，按<code>ctrl</code>+<code>shift</code>+<code>p</code>打开命令面板，输入<code>pci</code>(package control: install package的缩写)，按确认键后输入<code>Emmet</code>,安装<code>Emmet</code>插件，其余插件安装方法接是如此，此后就不重复了。</p>
+<h2 id="Advanced-New-File"><a href="#Advanced-New-File" class="headerlink" title="Advanced New File"></a>Advanced New File</h2><p>  <img src="http://img1.ph.126.net/0q4AiZTK64UtF5ANoJjsMg==/6632463045957141241.gif" alt="addFile"><br>  安装完<code>Advanced New File</code>，window系统按<code>ctrl</code>+<code>alt</code>+‘n’再输入对应路径可快速创建文件，Linux系统的快捷键为<code>super</code>+<code>alt</code>+<code>n</code>。</p>
+<h2 id="Side-Bar-Enhancement"><a href="#Side-Bar-Enhancement" class="headerlink" title="Side Bar Enhancement"></a>Side Bar Enhancement</h2><p>  <code>Side Bar Enhancement</code>用来增加侧边栏对文件的操作，获取其他主题后，侧边栏的样式会跟着改变，不安装此插件的话则不会变。</p>
+<h2 id="DocBlockr"><a href="#DocBlockr" class="headerlink" title="DocBlockr"></a>DocBlockr</h2><p>  <img src="http://img0.ph.126.net/LFql4ufT1I4cEBRYwxJFEg==/6632382781608289551.gif" alt="DocBlockr"><br>  <code>Side Bar Enhancement</code>用来快速生成函数描述(参数，返回值)，</p>
+<h2 id="SublimeCodeIntel"><a href="#SublimeCodeIntel" class="headerlink" title="SublimeCodeIntel"></a>SublimeCodeIntel</h2><p>  <code>SublimeCodeIntel</code>能对源代码文件进行索引，让你跳到函数声明位置</p>
+<h2 id="Color-Highlighter"><a href="#Color-Highlighter" class="headerlink" title="Color Highlighter"></a>Color Highlighter</h2><p>  <img src="http://img1.ph.126.net/vCkiMkQ92jrtTGoWIRz7UA==/6632751118001028127.gif" alt="Color Highlighter"><br>  <code>Color Highlighter</code>能根据十六机制或rgba显示相应的颜色</p>
+<h2 id="ChineseLocalizations"><a href="#ChineseLocalizations" class="headerlink" title="ChineseLocalizations"></a>ChineseLocalizations</h2><p>  改菜单栏显示为中文<br>  <img src="http://img0.ph.126.net/73siheCGbSc7NfBbxeLdKA==/3083558369883616545.png" alt="ChineseLocalizations"></p>
+<h2 id="Terminal"><a href="#Terminal" class="headerlink" title="Terminal"></a>Terminal</h2><p>  安装<code>Terminal</code>后按<code>ctrl</code>+<code>shift</code>+<code>t</code>能打开当前文件路径的终端,此插件安装后会与原生的快捷键产生冲突,因为<code>ctrl</code>+<code>shift</code>+<code>t</code>原本是打开已关闭的文件,所以打开<code>菜单栏</code>-&gt;<code>首选项</code>-&gt;<code>Pageage Setting</code>-&gt;<code>Terminal</code>-&gt;<code>Key Bind-Default</code>,输入:<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123; "keys": ["ctrl+shift+alt+t"], "command": "open_terminal" &#125;,</div><div class="line">]</div></pre></td></tr></table></figure></p>
+<h2 id="BracketHighlighter"><a href="#BracketHighlighter" class="headerlink" title="BracketHighlighter"></a>BracketHighlighter</h2><p>  <img src="http://img0.ph.126.net/rzLE_omQWeLhJXS8buQeuw==/1272829844703981948.gif" alt="BracketHighlighter"><br>  <code>BracketHighlighter</code>会在行号左侧显示包括的符号</p>
+<h2 id="HTML-CSS-JS-Prettify"><a href="#HTML-CSS-JS-Prettify" class="headerlink" title="HTML-CSS-JS Prettify"></a>HTML-CSS-JS Prettify</h2><p>  用于一键格式化<code>html</code>，<code>css</code>，<code>js</code>代码，安装完后按快捷键<code>ctrl</code>+<code>shift</code>+<code>h</code>美化代码,但对JS还是需要<code>JSFormat</code>插件</p>
+<h2 id="JSFormat"><a href="#JSFormat" class="headerlink" title="JSFormat"></a>JSFormat</h2><p>  格式化JS代码<code>ctrl</code>+<code>alt</code>+<code>f</code></p>
+<h2 id="AutoFileName"><a href="#AutoFileName" class="headerlink" title="AutoFileName"></a>AutoFileName</h2><p>  <img src="http://img1.ph.126.net/qPF0BFC77CHOf1kkim3Bbw==/6632229949492062049.gif" alt="AutoFileName"><br>  自动补全文件路径中的相应文件名</p>
+<h2 id="AlignTab"><a href="#AlignTab" class="headerlink" title="AlignTab"></a>AlignTab</h2><p>  <img src="http://img2.ph.126.net/IK2Xf3ZR3KXKA2Wu_zJxuw==/6632260735817638922.gif" alt="AlignTab"><br>  安装完插件后打开菜单-&gt;首选项-&gt;快捷键,输入:<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    "keys": ["control+alt+;"], "command": "align_tab",</div><div class="line">    "args" : &#123;</div><div class="line">      "user_input" : ":/f"</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    "keys": ["control+alt+="], "command": "align_tab",</div><div class="line">    "args" : &#123;</div><div class="line">      "user_input" : "=/f"</div><div class="line">    &#125;</div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    "keys": ["control+alt+."], "command": "align_tab",</div><div class="line">    "args" : &#123;</div><div class="line">      "user_input" : "=&gt;/f"</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">]</div><div class="line">即可</div></pre></td></tr></table></figure></p>
+<h2 id="Sublimelinter"><a href="#Sublimelinter" class="headerlink" title="Sublimelinter"></a>Sublimelinter</h2><p>  各类语言语法检查,安装完成后可安装相应语言检查插件例如<code>jshint</code>和<code>csshint</code><br>  (安装<code>SublimeLinter</code>前必须安装<code>node.js</code>)</p>
+  <!-- ## Markdown Preview & MarkdownEditing -->
+<h2 id="Babel"><a href="#Babel" class="headerlink" title="Babel"></a>Babel</h2><p>  去除<code>JSX</code>写法引起的代码不美观，安装完成后打开任意JS文件,再选择<code>菜单</code>-&gt;<code>视图</code>-&gt;<code>语法</code>-&gt;<code>Babel</code>-&gt;<code>JavaScript(Babel)</code>,看到右下脚显示为<img src="http://img1.ph.126.net/wwdJ5V0LXYj_Lhh4IfxXkg==/6632723630210331106.png" alt="Babel">说明成功设置</p>
+<h2 id="Theme-Spacegray"><a href="#Theme-Spacegray" class="headerlink" title="Theme-Spacegray"></a>Theme-Spacegray</h2><p>  一个简洁的Theme</p>
+]]></content>
+      
+        <categories>
+            
+            <category> web开发工具 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> sublime_text3插件 </tag>
+            
+            <tag> web开发 </tag>
+            
+            <tag> sublime_text3配置 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo+next博客搭建教程]]></title>
       <url>/2017/08/21/hexo+next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<a id="more"></a></p>
