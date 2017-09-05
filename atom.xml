@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minorbread.github.io/"/>
-  <updated>2017-09-05T07:46:25.399Z</updated>
+  <updated>2017-09-05T08:56:46.088Z</updated>
   <id>https://minorbread.github.io/</id>
   
   <author>
@@ -16,15 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>debian系一键录制和制作Gif图片</title>
+    <link href="https://minorbread.github.io/2017/09/05/debian9%E5%BD%95%E5%88%B6%E5%92%8C%E5%88%B6%E4%BD%9CGif%E5%9B%BE%E7%89%87/"/>
+    <id>https://minorbread.github.io/2017/09/05/debian9录制和制作Gif图片/</id>
+    <published>2017-09-05T07:55:31.000Z</published>
+    <updated>2017-09-05T08:56:46.088Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;debian一键录制和制作Gif图片教程(debian 9)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="debian" scheme="https://minorbread.github.io/categories/debian/"/>
+    
+    
+      <category term="gif制作" scheme="https://minorbread.github.io/tags/gif%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="Kazam" scheme="https://minorbread.github.io/tags/Kazam/"/>
+    
+      <category term="Mplayer" scheme="https://minorbread.github.io/tags/Mplayer/"/>
+    
+      <category term="Imagemagick" scheme="https://minorbread.github.io/tags/Imagemagick/"/>
+    
+  </entry>
+  
+  <entry>
     <title>sublime_text常用插件--web开发</title>
     <link href="https://minorbread.github.io/2017/08/24/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6-web%E5%BC%80%E5%8F%91/"/>
     <id>https://minorbread.github.io/2017/08/24/sublime-text常用插件-web开发/</id>
     <published>2017-08-24T08:56:00.000Z</published>
-    <updated>2017-09-05T07:46:25.399Z</updated>
+    <updated>2017-09-05T08:59:10.687Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。&lt;br&gt;且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之：D&lt;br&gt;
+      &lt;p&gt;作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。&lt;br&gt;且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之…&lt;br&gt;
     
     </summary>
     
@@ -44,7 +70,7 @@
     <link href="https://minorbread.github.io/2017/08/21/hexo+next%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
     <id>https://minorbread.github.io/2017/08/21/hexo+next博客搭建教程/</id>
     <published>2017-08-21T06:17:19.000Z</published>
-    <updated>2017-08-24T08:03:55.059Z</updated>
+    <updated>2017-09-05T08:09:48.210Z</updated>
     
     <summary type="html">
     

@@ -3,9 +3,50 @@
   
     
     <entry>
+      <title><![CDATA[debian系一键录制和制作Gif图片]]></title>
+      <url>/2017/09/05/debian9%E5%BD%95%E5%88%B6%E5%92%8C%E5%88%B6%E4%BD%9CGif%E5%9B%BE%E7%89%87/</url>
+      <content type="html"><![CDATA[<p>debian一键录制和制作Gif图片教程(debian 9)<br><a id="more"></a></p>
+<h1 id="制作步骤"><a href="#制作步骤" class="headerlink" title="制作步骤"></a>制作步骤</h1><p>制作gif的步骤如下:</p>
+<blockquote>
+<ol>
+<li>录制视频</li>
+<li>将视频分解成多张jpg图片</li>
+<li>将jpg图片转换成gif图片</li>
+<li>删除生成的jpg图片</li>
+</ol>
+</blockquote>
+<h1 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h1><h2 id="安装Kazam和Mplayer"><a href="#安装Kazam和Mplayer" class="headerlink" title="安装Kazam和Mplayer"></a>安装Kazam和Mplayer</h2><p>  <code>Kazam</code>是一款通用的linux录屏软件,而<code>Mplayer</code>是将转换为jpg格式工具,<br>  这两种软件可在软件中心搜索并下载</p>
+<h2 id="安装imagemagick"><a href="#安装imagemagick" class="headerlink" title="安装imagemagick"></a>安装imagemagick</h2><p>  接着安装将jpg格式转换为gif格式的工具<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install imagemagick</div></pre></td></tr></table></figure></p>
+<h1 id="制作生成git脚本"><a href="#制作生成git脚本" class="headerlink" title="制作生成git脚本"></a>制作生成git脚本</h1><p>准备工作完成后,因为我们是linux<br>系统,所以可以把步骤直接写成脚步,一建制作,新建文件<code>makegif.sh</code>,输入:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span>!/bin/bash</div><div class="line">if [ 0 -eq $# ]                               #判断是否有参数没有这提示错误并退出</div><div class="line">then</div><div class="line">  echo "please write gif and video name"</div><div class="line">  exit 0</div><div class="line">fi</div><div class="line"><span class="meta">#</span> 新建存储jpeg的临时文件夹, 将mp4文件装换为多张jpeg格式的图片,并存储到临时文件夹中,将jpeg文件夹中的图片制成gif,删除临时文件夹</div><div class="line">dir=$(date | md5sum | head -c 10)</div><div class="line">mkdir $dir ; mplayer -ao null $1 -vo jpeg:outdir=./$dir &amp;&amp; convert ./$dir/*.jpg  ./$2.gif &amp;&amp; rm -rf $dir</div></pre></td></tr></table></figure></p>
+<h1 id="使用脚本"><a href="#使用脚本" class="headerlink" title="使用脚本"></a>使用脚本</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sh makegif.sh [视频名称] [gif名称]</div></pre></td></tr></table></figure>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="http://blog.csdn.net/lablenet/article/details/48540749" target="_blank" rel="external">http://blog.csdn.net/lablenet/article/details/48540749</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> debian </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> gif制作 </tag>
+            
+            <tag> Kazam </tag>
+            
+            <tag> Mplayer </tag>
+            
+            <tag> Imagemagick </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[sublime_text常用插件--web开发]]></title>
       <url>/2017/08/24/sublime-text%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6-web%E5%BC%80%E5%8F%91/</url>
-      <content type="html"><![CDATA[<p>作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。<br>且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之：D<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>作为一个未来的前端从业者，一个配置好的编辑器，有助于提高自己的工作效率，sublime_text3是我用过的速度快，插件多的编辑器之一。<br>且因自己喜欢折腾系统，时常需要重新查找常用插件并做好前端相关的配置，故作此文以记之…<br><a id="more"></a></p>
 <h1 id="sublime-text3插件安装"><a href="#sublime-text3插件安装" class="headerlink" title="sublime_text3插件安装"></a>sublime_text3插件安装</h1><p>  sublime_text3常用插件安装</p>
 <h2 id="package-control安装-sublime-text3版本"><a href="#package-control安装-sublime-text3版本" class="headerlink" title="package control安装(sublime_text3版本)"></a>package control安装(sublime_text3版本)</h2><p>  打开sublime_text按<code>ctrl</code>+<code>`</code>输入<br>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)</div></pre></td></tr></table></figure></p>
 <h2 id="Emmet"><a href="#Emmet" class="headerlink" title="Emmet"></a>Emmet</h2><p>  <code>Emmet</code>插件,是一款提升书写<code>html</code>，<code>css</code>代码的插件，<a href="http://www.w3cplus.com/tools/Emmet-cheat-sheet.html" target="_blank" rel="external">Emmet使用手册</a>。<br>  如何安装: 在安装完<code>package control</code>插件后，按<code>ctrl</code>+<code>shift</code>+<code>p</code>打开命令面板，输入<code>pci</code>(package control: install package的缩写)，按确认键后输入<code>Emmet</code>,安装<code>Emmet</code>插件，其余插件安装方法接是如此，此后就不重复了。</p>
