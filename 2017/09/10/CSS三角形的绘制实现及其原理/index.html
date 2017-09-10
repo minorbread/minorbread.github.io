@@ -80,7 +80,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="三角形," />
 
 
 
@@ -98,16 +98,25 @@
 
 
 
-<meta name="description" content="keep clam, stay stupid">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZGQ&#39;s BLOG">
-<meta property="og:url" content="https://minorbread.github.io/categories/web开发工具/index.html">
+<meta name="description" content="当我们对于CSS基础掌握后,看网页时会想其实现方式,有时会对一些奇特图形感到困惑,比如用CSS实现星星或是大白,而三角形也是其中的一种,当未接触时,以为是用图片来实现,但有一大部分三角形其实是CSS实现的">
+<meta name="keywords" content="三角形">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS三角形的绘制实现及其原理">
+<meta property="og:url" content="https://minorbread.github.io/2017/09/10/CSS三角形的绘制实现及其原理/index.html">
 <meta property="og:site_name" content="ZGQ&#39;s BLOG">
-<meta property="og:description" content="keep clam, stay stupid">
+<meta property="og:description" content="当我们对于CSS基础掌握后,看网页时会想其实现方式,有时会对一些奇特图形感到困惑,比如用CSS实现星星或是大白,而三角形也是其中的一种,当未接触时,以为是用图片来实现,但有一大部分三角形其实是CSS实现的">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img0.ph.126.net/JULt-bpOMRcrxLGIIsDs1g==/6632323407980477325.png">
+<meta property="og:image" content="http://img1.ph.126.net/dZR4501qp77X-x2gGbI-Eg==/1281555568982066644.png">
+<meta property="og:image" content="http://img2.ph.126.net/gtiGN8l2VP1okxkheE33TQ==/2598295510034508134.png">
+<meta property="og:image" content="http://img2.ph.126.net/LPrvv0qWawLpm7RgMouDVg==/1283525893819036784.png">
+<meta property="og:image" content="http://img1.ph.126.net/YKii0ljEZbCHoXlowwE7JA==/6632568599073466045.png">
+<meta property="og:image" content="http://img1.ph.126.net/tmobGnsLhfRL8eodh1Sktg==/6632435558166511579.png">
+<meta property="og:updated_time" content="2017-09-10T03:56:46.749Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZGQ&#39;s BLOG">
-<meta name="twitter:description" content="keep clam, stay stupid">
+<meta name="twitter:title" content="CSS三角形的绘制实现及其原理">
+<meta name="twitter:description" content="当我们对于CSS基础掌握后,看网页时会想其实现方式,有时会对一些奇特图形感到困惑,比如用CSS实现星星或是大白,而三角形也是其中的一种,当未接触时,以为是用图片来实现,但有一大部分三角形其实是CSS实现的">
+<meta name="twitter:image" content="http://img0.ph.126.net/JULt-bpOMRcrxLGIIsDs1g==/6632323407980477325.png">
 
 <script>
     (function(){
@@ -146,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="https://minorbread.github.io/categories/web开发工具/"/>
+  <link rel="canonical" href="https://minorbread.github.io/2017/09/10/CSS三角形的绘制实现及其原理/"/>
 
 
 
 
 
-  <title>分类: web开发工具 | ZGQ's BLOG</title>
+  <title>CSS三角形的绘制实现及其原理 | ZGQ's BLOG</title>
   
 
 
@@ -171,7 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -319,55 +328,221 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>web开发工具<small>分类</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://minorbread.github.io/2017/09/10/CSS三角形的绘制实现及其原理/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZGQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/15728568?v=4&u=357433712fdfa9f35f92cd4a3d232ae271abf58f&s=400">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZGQ's BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/08/24/sublime-text常用插件-web开发/" itemprop="url">
-              
-                <span itemprop="name">sublime_text常用插件--web开发</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">CSS三角形的绘制实现及其原理</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-24T16:56:00+08:00"
-              content="2017-08-24" >
-          08-24
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T11:36:10+08:00">
+                2017-09-10
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/10/CSS三角形的绘制实现及其原理/" class="leancloud_visitors" data-flag-title="CSS三角形的绘制实现及其原理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">热度&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>℃
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  964&nbsp;字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4&nbsp;分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>当我们对于CSS基础掌握后,看网页时会想其实现方式,有时会对一些奇特图形感到困惑,比如用CSS实现星星或是<a href="http://www.jianshu.com/p/6d3feca2b5f7" target="_blank" rel="external">大白</a>,而三角形也是其中的一种,当未接触时,以为是用图片来实现,但有一大部分三角形其实是CSS实现的<a id="more"></a>(为了减少http请求)<!-- more --><br>但当看实现源码时却会让人倍感困惑,而这困惑也让人在了解完代码后快速遗忘,主要原因在于对CSS绘制图形及hack技巧不熟悉,明白绘制原理后便能快捷的画出想要三角形。</p>
+<h1 id="三角形实现原理"><a href="#三角形实现原理" class="headerlink" title="三角形实现原理"></a>三角形实现原理</h1><p>  首先绘制一个边长为200px的正方形,<code>border</code>宽度为1px:<br>  <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line"><span class="undefined">    .triangle &#123;</span></div><div class="line"><span class="undefined">      width: 200px;</span></div><div class="line"><span class="undefined">      height: 200px;</span></div><div class="line"><span class="undefined">      border: 1px solid red;</span></div><div class="line"><span class="undefined">    &#125;</span></div><div class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'triangle'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>  接着将<code>border</code>宽度变为50px,并为四条<code>border</code>依次染上红、绿、蓝、黄四种颜色<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* css部分 */</span></div><div class="line"><span class="selector-class">.triangle</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">  <span class="attribute">border-top</span>: <span class="number">50px</span> solid red;</div><div class="line">  <span class="attribute">border-right</span>: <span class="number">50px</span> solid green;</div><div class="line">  <span class="attribute">border-bottom</span>: <span class="number">50px</span> solid blue;</div><div class="line">  <span class="attribute">border-left</span>: <span class="number">50px</span> solid yellow;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>  宽度变大后可以看到一个正方形其实是由四个梯形组合而成的:<img src="http://img0.ph.126.net/JULt-bpOMRcrxLGIIsDs1g==/6632323407980477325.png" alt="正方形">接着我们在将正方形的<code>width</code>改为0,因为梯形的上底变为0,因此看到两个三角形:<img src="http://img1.ph.126.net/dZR4501qp77X-x2gGbI-Eg==/1281555568982066644.png" alt="三角形出现"><br>  我们接着也把<code>hight</code>改为0,由于没有高度和宽度,所有的梯形由于上底变为0,且下底为<code>border</code>的宽度,也就是四个三角形,我们把其它三个三角形擦除:<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* css部分 */</span></div><div class="line"><span class="selector-class">.triangle</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">border-top</span>: <span class="number">50px</span> solid transparent;</div><div class="line">  <span class="attribute">border-right</span>: <span class="number">50px</span> solid transparent;</div><div class="line">  <span class="attribute">border-bottom</span>: <span class="number">50px</span> solid blue;</div><div class="line">  <span class="attribute">border-left</span>: <span class="number">50px</span> solid transparent;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>  一个等腰三角形绘制完成:<br>  <img src="http://img2.ph.126.net/gtiGN8l2VP1okxkheE33TQ==/2598295510034508134.png" alt="等腰三角形"></p>
+<h1 id="特殊三角形的形成"><a href="#特殊三角形的形成" class="headerlink" title="特殊三角形的形成"></a>特殊三角形的形成</h1><h2 id="等边三角形"><a href="#等边三角形" class="headerlink" title="等边三角形"></a>等边三角形</h2><p>  通过之前的图形我们可以看到,三角形的高为其所在对应边的宽度,而底边长为与它相邻两个高度之和,制作等边三角形,根据勾股定理,等边三角形边长的高与底边的比应为1.732(根号3)比2,<br>  即<code>border-left</code>(width)+<code>border-right</code>(width):<code>border-bottom</code>(width)= 2:1.732,则有<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* css部分 */</span></div><div class="line"><span class="selector-class">.triangle</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">  <span class="comment">/*border-top: 50px solid transparent;*/</span>      <span class="comment">/* 去除border-top,减少三角形顶部的空间占有 */</span></div><div class="line">  <span class="attribute">border-right</span>: <span class="number">50px</span> solid transparent;</div><div class="line">  <span class="attribute">border-bottom</span>: <span class="number">86.6px</span> solid blue;            <span class="comment">/* 1.732 * 50px */</span></div><div class="line">  <span class="attribute">border-left</span>: <span class="number">50px</span> solid transparent;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>  至此一个等边三角形绘制完成</p>
+<h2 id="直角三角形"><a href="#直角三角形" class="headerlink" title="直角三角形"></a>直角三角形</h2><p>  我们先把等边三角形的左右边染上红绿两种颜色:<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* css部分 */</span></div><div class="line"><span class="selector-class">.triangle</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">  <span class="comment">/*border-top: 50px solid transparent;*/</span>      <span class="comment">/* 去除border-top,减少三角形顶部的空间占有 */</span></div><div class="line">  <span class="attribute">border-right</span>: <span class="number">50px</span> solid red;</div><div class="line">  <span class="attribute">border-bottom</span>: <span class="number">86.6px</span> solid blue;            <span class="comment">/* 1.732 * 50px */</span></div><div class="line">  <span class="attribute">border-left</span>: <span class="number">50px</span> solid green;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>  <img src="http://img2.ph.126.net/LPrvv0qWawLpm7RgMouDVg==/1283525893819036784.png" alt="等边三角形">可以看到等边三角形的左右两边已经有两个直角三角形,这两个直角三角形是由于<code>border-top</code>无设置时有裁切效果而形成:<img src="http://img1.ph.126.net/YKii0ljEZbCHoXlowwE7JA==/6632568599073466045.png" alt="裁切"><br>  即当我们无设置其中一边时,浏览器会裁切掉其宽度(width)所占有的<br>  我们再把<code>border-left</code>注释掉,无<code>border-left</code>后，看到有两个直角三角形:<img src="http://img1.ph.126.net/tmobGnsLhfRL8eodh1Sktg==/6632435558166511579.png" alt="直角三角形">把其中一个改为颜色值改为<code>transparent</code>,至此,直角三角形绘制完成。</p>
+<h1 id="IE兼容"><a href="#IE兼容" class="headerlink" title="IE兼容"></a>IE兼容</h1><p>  我们现在知道了三角形的绘制是根据矩形的绘制原理,再使不需要的边透明(transparent)形成的,但IE6不支持<code>transparent</code>,<br>  你要其正常显示的话可以使用以下方法:<br>  <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 增加一行border-style将不需要显示的边框值设为dash */</span></div><div class="line"><span class="selector-class">.triangle</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">  <span class="comment">/* border-top: 50px solid yellow; */</span>      <span class="comment">/* 去除border-top,减少三角形顶部的空间占有 */</span></div><div class="line">  <span class="attribute">border-right</span>: <span class="number">50px</span> solid red;</div><div class="line">  <span class="attribute">border-bottom</span>: <span class="number">86.6px</span> solid transparent;            <span class="comment">/* 1.732 * 50px */</span></div><div class="line">  <span class="comment">/*border-left: 50px solid transparent;*/</span></div><div class="line">  <span class="attribute">border-style</span>: dashed solid dashed dashed;           <span class="comment">/* 兼容IE6 */</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="参考文章-amp-工具"><a href="#参考文章-amp-工具" class="headerlink" title="参考文章&amp;工具"></a>参考文章&amp;工具</h1><p>  <a href="https://www.zhihu.com/question/35180018" target="_blank" rel="external">https://www.zhihu.com/question/35180018</a><br>  <a href="http://blog.csdn.net/hutaoer06051/article/details/8165633" target="_blank" rel="external">http://blog.csdn.net/hutaoer06051/article/details/8165633</a><br>  <a href="http://apps.eky.hk/css-triangle-generator/ja" target="_blank" rel="external">三角形生成工具</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/三角形/" rel="tag"><i class="fa fa-tag"></i> 三角形</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/05/debian9录制和制作Gif图片/" rel="next" title="debian系一键录制和制作Gif图片">
+                <i class="fa fa-chevron-left"></i> debian系一键录制和制作Gif图片
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -375,6 +550,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMDMyNC82ODc4"></div>
+    
+  </div>
+
 
         </div>
         
@@ -395,8 +576,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars0.githubusercontent.com/u/15728568?v=4&u=357433712fdfa9f35f92cd4a3d232ae271abf58f&s=400"
@@ -478,6 +668,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#三角形实现原理"><span class="nav-number">1.</span> <span class="nav-text">三角形实现原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特殊三角形的形成"><span class="nav-number">2.</span> <span class="nav-text">特殊三角形的形成</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#等边三角形"><span class="nav-number">2.1.</span> <span class="nav-text">等边三角形</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直角三角形"><span class="nav-number">2.2.</span> <span class="nav-text">直角三角形</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IE兼容"><span class="nav-number">3.</span> <span class="nav-text">IE兼容</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章-amp-工具"><span class="nav-number">4.</span> <span class="nav-text">参考文章&工具</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -611,10 +817,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -643,6 +849,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
